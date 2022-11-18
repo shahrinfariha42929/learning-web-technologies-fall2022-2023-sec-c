@@ -9,7 +9,6 @@
     }else if($name == $_SESSION['user']['name'] && $password == $_SESSION['user']['password']){
 
         setcookie('status', 'true', time()+3600, '/');
-        header('location: Home.php');
     }else{
         echo "invalid user";
     }
